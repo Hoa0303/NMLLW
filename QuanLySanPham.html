@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý sản phẩm </title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.panel {
+			width: 60%;
+			margin: 0 auto;
+			border: solid #4267b2 1px;
+		}
+
+		.panel-heading {
+			background-color: #4267b2;
+			padding: 10px;
+			color: white;
+		}
+
+		.panel-body {
+			padding: 10px;
+		}
+
+		.panel-body label {
+			font-weight: bold;
+		}
+
+		.form-group {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		.form-control {
+			display: block;
+			width: 98%;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+
+		.table {
+			width: 100%;
+		}
+
+		.table tr {
+			border-bottom: solid blue 1px;
+		}
+	</style>
+</head>
+<body>
+	<div class="panel">
+		<div class="panel-heading">
+			THÔNG TIN SẢN PHẨM
+		</div>
+		<div class="panel-body">
+			<form method="post">
+				<div class="form-group">
+					<label>Tên Sản Phẩm:</label>
+					<input type="number" name="index" id="index" value="" hidden="true">
+					<input class="form-control" type="text" name="product_name" id="product_name" placeholder="Enter product name">
+				</div>
+                <div class="form-group">
+					<label>Hình Ảnh:</label>
+					<!-- <input class="form-control" type="number" name="price" id="price" placeholder="Enter price" value="0" onkeyup="updateTotalPrice()"> -->
+                    <input type="file">
+				</div>
+				<div class="form-group">
+					<label>Danh Mục:</label>
+					<select class="form-control" id="manuafaturer_name" onchange="changeManufaturer()">
+						<option value="">-- Chọn --</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Tên Loại:</label>
+					<select class="form-control" id="category_name">
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Giá:</label>
+					<input class="form-control" type="number" name="price" id="price" placeholder="Enter price" value="0" onkeyup="updateTotalPrice()">
+				</div>
+				<div class="form-group">
+					<label>Số Lượng:</label>
+					<input class="form-control" type="text" name="quantity" id="quantity" placeholder="Enter quantity" value="0" onkeyup="updateTotalPrice()">
+				</div>
+				<div class="form-group">
+					<label>Tổng Giá:</label>
+					<input class="form-control" type="text" name="total_price" id="total_price" value="0" disabled="true">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-success" type="button" onclick="addProduct()">Thêm</button>
+					<button class="btn btn-danger" type="reset">Hủy</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="panel" style="margin-top: 20px;">
+		<div class="panel-heading">
+			Danh Sách Sản Phẩm
+		</div>
+		<div class="panel-body">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>STT</th>
+						<th>Tên Sản Phẩm</th>
+						<th>Danh Mục</th>
+						<th>Tên Loại</th>
+						<th>Giá</th>
+						<th>Số Lượng</th>
+						<th>Tổng Giá</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="result">
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script src="js/admin.js"></script>
+</body>
+</html>

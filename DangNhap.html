@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Dụng Sinh Viên</title>
+    <link rel="short icon" href="img/icon.png">
+    <script src="https://kit.fontawesome.com/63dafaa4e7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- tooltip -->
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/js/bootstrap.min.js">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://unpkg.com/bootstrap-table@1.21.1/dist/bootstrap-table.min.js"></script>
+    <!-- Latest compiled and minified Locales -->
+    <script src="https://unpkg.com/bootstrap-table@1.21.1/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/jquery/jquery-3.6.1.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <style>
+        .button a {
+            text-decoration: none;
+            margin: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light head">
+            <div class="container">
+              <a class="navbar-brand" href="TrangChu.html">
+                <img src="img/HomeShop.png" alt="" height="150px" width="150px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Danh Mục Sản Phẩm
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="DoTrangTri.html">Đồ Trang Trí</a></li>
+                          <li><a class="dropdown-item" href="DoDien.html">Đồ Điện</a></li>
+                          <li><a class="dropdown-item" href="DoDungCaNhan.html">Đồ Dùng Cá Nhân</a></li>
+                          <li><a class="dropdown-item" href="DoDungNhaBep.html">Đồ Dùng Nhà Bếp</a></li>
+                          <li><a class="dropdown-item" href="Clean.html">Chất Tẩy Rửa</a></li>                          
+                        </ul>
+                      </li>
+                    <li id="acc" class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="DangNhap.html"><i class="fa-solid fa-user"></i> Tài Khoản</a>
+                    </li>                  
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="GioHang.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="width: 45%;">
+                    <input class="form-control me-2" type="search" placeholder="Nhập sản phẩm bạn cần tìm ..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container" id="formlogin">
+
+            <div class="card">
+                <form name="frm1" method="POST" action="TrangChu.html" onsubmit="return login()" class="card-body">
+                    <h4 class="text-black" style="text-align: center;">Đăng Nhập</h1>
+                        <br>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input name="username" type="email" id="form2Example1" class="form-control" placeholder="Nhập tài khoản" />
+                            <!-- <label class="form-label" for="form2Example1">Tài Khoản</label> -->
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input name="pw" type="password" id="form2Example2" class="form-control" placeholder="Nhập mật khẩu" />
+                            <!-- <label class="form-label" for="form2Example2">Mật Khẩu</label> -->
+                        </div>
+
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="row mb-4">
+                            <div class="col d-flex justify-content-center">
+                                <!-- Checkbox -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                                    <label class="form-check-label" for="form2Example31"> Nhớ Mật Khẩu </label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <!-- Simple link -->
+                                <a href="#!">Quên Mật Khẩu?</a>
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" style="width: 100%;" class="btn btn-primary btn-block mb-4">Đăng Nhập</button>
+
+                        <!-- Register buttons -->
+                        <div class="text-center" style="text-align: center; margin-left: 3%;">
+                            <p>Bạn chưa có tài khoản? <a href="DangKy.html">Đăng ký</a></p>
+                        </div>
+
+                        <div class="button" style="text-align: center; margin: auto;">
+
+                            <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+
+                            <a href="#"><i class="fa-brands fa-google"></i>Google</a>
+
+                            <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+
+
+                        </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="text-center p-4" style="height: 40px; padding: 0px !important; background-color: black; color: white; font-size: large; margin-top: 20%;">
+            <p><i class="fa-brands fa-css3-alt"></i> Bản Quyền Thuộc Team 5</p>
+        </div>
+    </footer>
+</body>

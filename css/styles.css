@@ -1,0 +1,290 @@
+body {
+    background-color: #79acd9 !important;
+}
+
+ul {
+    text-align: left;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+    margin: 5px;
+}
+
+
+/* header */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .head {
+    padding: 0px;
+    margin: 0px;
+    background-color: #1261a6 !important;
+    box-shadow: 0 10px 90px white;
+}
+
+.nav-link {
+    font-weight: bolder !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffcc00 !important;
+}
+
+#navbarDropdown {
+    color: #ffcc00;
+    font-size: large !important;
+    font-weight: bolder !important;
+}
+
+.container-fluid {
+    background-color: #79acd9;
+}
+
+header .container {
+    background-color: #1261a6;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #ffcc00 !important;
+    --bs-btn-hover-bg: #126 !important;
+    --bs-btn-border-color: #ffcc00 !important;
+    --bs-btn-hover-border-color: #ffcc00 !important;
+    --bs-btn-active-bg: #ffcc00 !important;
+    border: 2px solid !important;
+    border-radius: 10px !important;
+}
+
+.navbar {
+    --bs-navbar-color: #ffcc00 !important;
+    --bs-navbar-toggler-border-color: #ffcc00 !important;
+}
+
+
+/* main */
+
+main {
+    margin: 10px;
+}
+
+.carousel-inner img {
+    height: 350px;
+    border-radius: 15px;
+}
+
+#sale {
+    height: 350px;
+    margin-right: 20px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px #060E26;
+}
+
+.list-product-title {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 15px;
+    background-color: #1261a6;
+    font-weight: bolder;
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.list-product-title a:hover {
+    cursor: pointer;
+    color: #ffcc00 !important;
+}
+
+.card-product {
+    margin: 0 5px 0 5px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px !important;
+    box-shadow: 4px 4px 8px #060E26;
+}
+
+.card-product:hover {
+    z-index: 3;
+    width: 320px;
+}
+
+.card-product:hover img {
+    height: 320px;
+    width: 320px;
+}
+
+.product img {
+    height: 275px;
+    width: auto;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.product-title:hover {
+    cursor: pointer;
+}
+
+.card-text .product-price {
+    position: relative;
+}
+
+.del-price {
+    text-decoration: line-through;
+}
+
+.price {
+    text-decoration: none;
+}
+
+.new-price {
+    color: red;
+    position: absolute;
+    right: 0.5rem;
+}
+
+.btn-add-to-cart {
+    margin-left: 18%;
+    background-color: #060E26 !important;
+    color: white !important;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #ffcc00 !important;
+}
+
+.btn-detail {
+    color: #060E26 !important;
+    border: 1px solid #060E26 !important;
+}
+
+.btn-detail:hover {
+    color: white !important;
+    background-color: #060E26 !important;
+}
+
+.sale-sticky {
+    color: white;
+    background-color: red;
+    display: block;
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    top: 11px;
+    right: -39px;
+    transform: rotate(45deg);
+}
+
+main #formlogin {
+    /*DanhNhap.html*/
+    width: 400px;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 100px;
+    background-color: #1261a6;
+}
+
+footer h6 {
+    margin: 15px 0px;
+}
+
+footer h6:hover {
+    cursor: pointer;
+}
+
+footer li {
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+
+/* chi tiết */
+
+.mb-5 {
+    margin: 5% 16% !important;
+}
+
+.left-side-product-box img {
+    width: 100%;
+}
+
+.left-side-product-box .sub-img img {
+    margin-top: 5px;
+    width: 83px;
+    height: 100px;
+}
+
+.detail span {
+    font-size: 15px;
+}
+
+.detail p {
+    font-size: 25px;
+    color: #5D4C46 !important;
+}
+
+.detail .price {
+    color: #E45641 !important;
+}
+
+.detail .tag-section {
+    font-size: 18px;
+    color: #5D4C46 !important;
+}
+
+.pro-box-section .pro-box img {
+    width: 100%;
+    height: 200px;
+}
+
+@media (min-width:360px) and (max-width:640px) {
+    .pro-box-section .pro-box img {
+        height: auto;
+    }
+}
+
+
+/* chi tiết */
+
+
+/* Mũi tên lên đầu trang */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: black;
+    border-radius: 30px;
+}
+
+#myBtn:hover {
+    background-color: #f1f1f1;
+}
